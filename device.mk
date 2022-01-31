@@ -145,6 +145,14 @@ PRODUCT_COPY_FILES += \
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
+# DeviceSettings
+PRODUCT_PACKAGES += \
+   DeviceSettings
+
+# DeviceDoze
+PRODUCT_PACKAGES += \
+    DeviceDoze
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -231,6 +239,10 @@ PRODUCT_PACKAGES += \
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
+# Init
+PRODUCT_PACKAGES += \
+    init.xiaomi_parts.rc \
 
 # IMS
 PRODUCT_PACKAGES += \

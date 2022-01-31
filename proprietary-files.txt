@@ -81,6 +81,9 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# Audio FX modules - from ginkgo MIUI V12.0.1.0.RCOCNXM
+vendor/lib/soundfx/libmisoundfx.so|b96beb7c9aaded46a15bdbe8079b84d2beec9911
+
 # Bluetooth - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|378ad8ce95651b4bf81ad73aaffbdf0666c55432
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959

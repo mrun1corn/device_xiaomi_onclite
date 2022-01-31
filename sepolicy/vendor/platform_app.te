@@ -3,7 +3,6 @@ dontaudit platform_app hal_power_service:service_manager { find };
 allow platform_app zygote:unix_stream_socket { getopt };
 allow platform_app audio_config_prop:file { read };
 allow platform_app sysfs_kgsl:file { read };
-allow platform_app sysfs_battery_supply:dir { search };
 allow platform_app sysfs_battery_supply:file { open };
 allow platform_app sysfs_battery_supply:file { read };
 allow platform_app sysfs_battery_supply:file { getattr };
@@ -17,3 +16,9 @@ allow platform_app zygote:unix_stream_socket { getopt };
 allow platform_app vendor_sysfs_battery_supply:dir search;
 allow platform_app vendor_sysfs_battery_supply:file r_file_perms;
 allow platform_app vendor_sysfs_kgsl:file r_file_perms;
+
+#Dolby
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+allow platform_app hal_dms_default:binder { call transfer };
+allow platform_app sysfs_kgsl:lnk_file read;
+
