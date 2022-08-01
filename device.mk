@@ -189,6 +189,10 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
