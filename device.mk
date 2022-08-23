@@ -126,15 +126,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libgui_vendor \
-    libstdc++.vendor \
-    Snap
-
-# Dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapminfree=4m \
-    dalvik.vm.heapstartsize=16m
-
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+    libstdc++ \
+    libstdc++.vendor
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
