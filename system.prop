@@ -58,3 +58,20 @@ ril.subscription.types=NV,RUIM
 rild.libargs=-d /dev/smd0
 ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
+
+# set cutoff voltage to 3400mV
+ro.cutoff_voltage_mv=3400
+
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
+# Smoothens UI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+
+# WFD
+persist.debug.wfd.enable=1
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
+
