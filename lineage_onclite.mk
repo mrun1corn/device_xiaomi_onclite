@@ -32,7 +32,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # riceDroid Stuff
 RICE_MAINTAINER := MrUn1corn
-WITH_GMS := false
+WITH_GMS := true
 SUSHI_BOOTANIMATION := 720
 
 # Graphene Camera
