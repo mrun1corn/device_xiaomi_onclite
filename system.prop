@@ -61,6 +61,10 @@ vendor.vidc.dec.downscalar_height=1088
 vendor.vidc.dec.downscalar_width=1920
 vendor.vidc.enc.disable_bframes=1
 
+#Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf.scroll_opt=true
+
 # Priv-app permissions whitelist
 ro.control_privapp_permissions=log
 
