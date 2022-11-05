@@ -438,9 +438,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    debug.sf.use_phase_offsets_as_durations=1 \
+    debug.sf.early.sf.duration=6000000 \
+    debug.sf.early.app.duration=6500000 \
+    debug.sf.earlyGl.sf.duration=6000000 \
+    debug.sf.earlyGl.app.duration=9500000 \
+    debug.sf.late.sf.duration=13500000 \
+    debug.sf.late.app.duration=25500000 \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    ro.surface_flinger.max_virtual_display_dimension=4096
 
 # Trust HAL
 PRODUCT_PACKAGES += \
