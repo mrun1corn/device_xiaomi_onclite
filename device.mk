@@ -450,6 +450,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.use_phase_offsets_as_durations=1 \
+    debug.sf.disable_client_composition_cache=1 \
     debug.sf.early.sf.duration=6000000 \
     debug.sf.early.app.duration=6500000 \
     debug.sf.earlyGl.sf.duration=6000000 \
