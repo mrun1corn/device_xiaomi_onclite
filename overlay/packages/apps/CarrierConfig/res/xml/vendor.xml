@@ -111,6 +111,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
          ignored and manual operator selection will always be available. See
          CPHS4_2.WW6, CPHS B.4.7.1 for more information -->
         <boolean name="csp_enabled_bool" value="true" />
+
     </carrier_config>
 
     <carrier_config mcc="001" mnc="01">
