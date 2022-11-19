@@ -15,6 +15,20 @@ $(call inherit-product, device/xiaomi/onclite/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# riceDroid Stuff
+RICE_MAINTAINER := MrUn1corn
+WITH_GMS := false
+SUSHI_BOOTANIMATION := 720
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Allow usage of custom binary linker (LD), default is false
+TARGET_KERNEL_OPTIONAL_LD := true
+
+# AudioFx
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_onclite
 PRODUCT_DEVICE := onclite
