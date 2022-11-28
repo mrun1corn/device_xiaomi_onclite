@@ -6,3 +6,9 @@ r_dir_file(system_server, keylayout_file);
 
 # Fingerprint
 get_prop(system_server, vendor_fp_prop);
+
+allow system_server proc:file { getattr };
+allow system_server proc:file { read };
+allow system_server proc:file { write };
+allow system_server proc:file { open };
+allow system_server proc:dir { search };

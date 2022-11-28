@@ -1,11 +1,38 @@
 get_prop(system_app, system_prop);
 set_prop(system_app, system_prop);
 
+allow system_app proc_pagetypeinfo:dir { search };
 allow system_app proc_pagetypeinfo:file { read };
+allow system_app proc_pagetypeinfo:file { write };
+allow system_app proc_pagetypeinfo:file { open };
+allow system_app proc_pagetypeinfo:file { getattr };
+
+allow system_app proc_vmallocinfo:dir { search };
 allow system_app proc_vmallocinfo:file { read };
+allow system_app proc_vmallocinfo:file { write };
+allow system_app proc_vmallocinfo:file { open };
+allow system_app proc_vmallocinfo:file { getattr };
+
 allow system_app sysfs_zram:dir { search };
+allow system_app sysfs_zram:file { read };
+allow system_app sysfs_zram:file { write };
+allow system_app sysfs_zram:file { open };
+allow system_app sysfs_zram:file { getattr };
+
 allow system_app zygote:unix_stream_socket { getopt };
+
 allow system_app privapp_data_file:dir { search };
+allow system_app privapp_data_file:file { read };
+allow system_app privapp_data_file:file { write };
+allow system_app privapp_data_file:file { open };
+allow system_app privapp_data_file:file { getattr };
 
 # allow system apps to read battery status
 r_dir_file(system_app, sysfs_battery_supply)
+
+allow system_app qemu_hw_prop:dir { search };
+allow system_app qemu_hw_prop:file { read };
+allow system_app qemu_hw_prop:file { write };
+allow system_app qemu_hw_prop:file { open };
+allow system_app qemu_hw_prop:file { getattr };
+

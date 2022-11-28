@@ -1,4 +1,13 @@
 allow untrusted_app_29 zygote:unix_stream_socket { getopt };
+
+allow untrusted_app_29 camera_prop:dir { search };
+allow untrusted_app_29 camera_prop:file { write };
 allow untrusted_app_29 camera_prop:file { read };
 allow untrusted_app_29 camera_prop:file { open };
 allow untrusted_app_29 camera_prop:file { getattr };
+
+allow untrusted_app_29 shell_test_data_file:dir { search };
+allow untrusted_app_29 shell_test_data_file:file { open };
+allow untrusted_app_29 shell_test_data_file:file { read };
+allow untrusted_app_29 shell_test_data_file:file { write };
+allow untrusted_app_29 shell_test_data_file:file { getattr };
