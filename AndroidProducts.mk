@@ -1,2 +1,3 @@
+
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_onclite.mk
+    $(LOCAL_DIR)/derp_onclite.mk
