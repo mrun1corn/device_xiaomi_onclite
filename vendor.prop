@@ -75,6 +75,7 @@ ro.vendor.display.sensortype=2
 debug.renderengine.backend=skiaglthreaded
 debug.cpurend.vsync=false
 vendor.display.disable_metadata_dynamic_fps=1
+vendor.display.perf_hint_window=50
 
 # DRM
 drm.service.enabled=true
