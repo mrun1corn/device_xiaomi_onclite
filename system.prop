@@ -35,6 +35,7 @@ persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
 # Display
+debug.performance.tuning=1
 ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.set_idle_timer_ms=80
 ro.surface_flinger.enable_frame_rate_override=true
