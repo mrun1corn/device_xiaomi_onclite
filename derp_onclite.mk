@@ -17,6 +17,7 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 USE_LEGACY_BOOTANIMATION := true
 TARGET_USES_BLUR := true
+DERP_BUILDTYPE := Official
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_onclite
