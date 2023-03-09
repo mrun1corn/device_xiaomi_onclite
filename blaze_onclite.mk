@@ -20,7 +20,7 @@ BLAZE_MAINTAINER := mrun1corn
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_BLUR := true
-
+WITH_GAPPS = true
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := blaze_onclite
 PRODUCT_DEVICE := onclite
