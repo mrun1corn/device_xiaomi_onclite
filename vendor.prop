@@ -71,9 +71,8 @@ dalvik.vm.dex2oat64.enabled=true
 # Display post-processing
 ro.vendor.display.cabl=0
 ro.vendor.display.sensortype=2
-debug.renderengine.backend=skiaglthreaded
-debug.hwui.renderer=skiagl
 debug.cpurend.vsync=false
+debug.hwui.renderer=opengl
 vendor.display.disable_metadata_dynamic_fps=1
 vendor.display.perf_hint_window=50
 vendor.display.disable_partial_split=1
