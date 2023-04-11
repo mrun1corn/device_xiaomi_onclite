@@ -111,6 +111,8 @@ debug.sf.hwc.min.duration=10000000
 debug.egl.hw=1 
 debug.sf.hw=1 
 ro.hwui.render_ahead=10
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # IMS
 persist.dbg.ims_volte_enable=1
