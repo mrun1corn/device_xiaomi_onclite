@@ -12,15 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
-# Inherit some common derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common spark stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
-USE_LEGACY_BOOTANIMATION := true
-TARGET_USES_BLUR := true
-DERP_BUILDTYPE := Official
+WITH_GAPPS = true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_onclite
+PRODUCT_NAME := spark_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
